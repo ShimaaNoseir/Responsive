@@ -1,0 +1,583 @@
+/*Start Global Rules*/
+
+* {
+   -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Droid Sans', sans-serif;
+   
+}
+/*End Global Rules*/
+
+/*Start Header*/
+.header {
+   background-image: url('../images/1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size:cover;
+    background-size: cover;
+    min-height: 700px;
+    position: relative;
+}
+
+.header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    
+}
+
+.header .overlay h1 {
+    font-size: 60px;
+    margin-top: 50px;
+}
+.header .overlay .plan {
+    border: 2px solid #FFF;
+    font-size: 18px;
+    width: 45%;
+    /*float: left;*/
+    padding: 20px;
+    margin-right: 1%;
+    margin-left: 1%;
+    margin: 1%;
+}
+
+.header .overlay .order {
+    border: 4px solid #FFF;
+    font-size: 18px;
+    padding: 20px;
+    margin: 30px 1% 0;
+}
+
+
+@media (max-width: 420px){  /*Custom Media Not Found On Bootstrap*/
+    h1 {
+        margin-top: 20px;
+        font-size: 50px;
+    }
+    .header .overlay .plan{
+        float: none;
+        margin :0 auto 20px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 767px){  /*Mobile & Tablet Rules*/
+    
+    .header .overlay .plan{
+        float: none;
+        margin :0 auto 20px;
+        font-size: 18px;
+    }
+}
+
+/* End Header*/
+
+/*Start Features*/
+
+.features {
+    padding: 30px 0;
+}
+.features .h1 {
+    font-size: 50px;
+    color: #555;
+}
+.features .feat {
+    color: #555;
+    padding: 0 20px 0 0;
+    margin-bottom: 30px;
+}
+.features .feat h2 {
+    margin: 10px 0 8px;
+    color: green;
+}
+.features .feat p {
+     line-height: 1.6;
+     margin: 0;
+     color: blue;
+}
+
+@media (max-width: 767px){
+    .features .feat {
+        text-align: center;
+    }
+    /*.features .feat:first-of-type(even){
+        background-color: #EEE;
+    }*/
+}
+@media (min-width: 768px) { /* Small screen rulles*/
+      .features .feat {
+        width: 50%;
+    }
+}
+
+
+
+@media (min-width: 992px) { /* Meduim screen rulles*/
+    .features .feat {
+        width: 33.3333%;
+    }
+}
+/*End Features*/
+
+/*Start About*/
+   .about-us {
+    background-color: #EEE;
+    padding: 30px 0;
+
+
+   }
+
+  .about-us .h1 {
+    font-size: 50px;
+    color: #848484;
+  }
+
+  .about-us .responsive-paragraph {
+   color: blue;
+    font-size: 22px;
+    /*overflow: hidden;*/
+    
+   
+   
+  }
+/*End About*/
+    @media (max-width: 767px){
+        .rresponsive-paragraph {
+            text-align: center;
+            font-size: 18px;
+        }
+    }
+/*Start Our-Works*/
+ 
+ @media (max-width:  767px){
+ .our-works .image {
+    
+    width: 100%;
+    
+ }
+}
+
+
+@media (min-width: 767px){
+ .our-works .image {
+    
+    width: 50%;
+    
+ }
+}
+
+
+ @media (min-width: 992px)and (max-width: 1200px) {
+ .our-works .image {
+    width: 33.33333%;
+    
+ }
+}
+
+ @media (min-width: 1200px){
+ .our-works .image {
+    
+    width: 25%;
+    
+ }
+}
+
+
+/*End Our-Works*/
+
+/* Start Our Pricing*/
+   .pricing-table {
+    background-color: #444;
+    color: #FFF;
+    padding: 50px 0;
+    
+
+   }
+   
+   .pricing-table .h1{
+    margin: 0 0 40px;
+    font-size: 50px;
+    color: #EEE;
+   }
+
+   .pricing-table .pricing-plan {
+    border: 3px solid #FFF;
+    padding: 20px 0;
+    position: relative;
+   }
+
+   .pricing-table .pricing-plan h3 {
+    margin: 0 0 10px;
+    font-size: 26px;
+    color: green;
+   }
+
+   .pricing-table .pricing-plan .pricing {
+    display: inline-block;
+    margin: 0 0 10px;
+    font-size: 22px;
+    color: #AAA;
+   }
+   
+   .pricing-table .pricing-plan ul {
+    line-height: 2;
+    font-size: 18px;
+    color: blue;
+   }
+
+
+    @media (max-width: 767px) {/*Mobile*/ 
+    .pricing-table .pricing-plan{
+         width: 100%;
+         margin-bottom:20px;
+
+
+        }
+
+    }
+
+   @media (min-width: 768px) and (max-width: 991px) {
+    .pricing-table .pricing-plan{
+         width: 100%;
+         margin-bottom:20px;
+
+    }
+   }
+
+   @media (min-width: 992px) { /* meduim Screen Rules*/
+    .pricing-table .pricing-plan:not(.ultimate) {
+        margin-right: 1%;
+    }
+
+    .pricing-table .pricing-plan {
+        width: 32.66666%;
+        margin-bottom: 0;
+    }
+
+    .pricing-table .pricing-plan.plus {
+       left: 33.66666%; 
+    }
+    .pricing-table .pricing-plan.premium {
+       right: 33.66666%; 
+    }
+}
+/* End Our Pricing*/
+
+/* Start What They Say*/
+
+.they-say {
+    padding: 50px 0;
+}
+
+.they-say .h1 {
+    font-size: 50px;
+    margin: 0 0 30px;
+    color: #777;
+
+}
+
+.they-say .person-say {
+    background-color: #EEE;
+    padding: 20px;
+    margin: 0 0 20px;
+    border: 1px solid #DDD;
+    border-radius: 10px;
+}
+
+.they-say .person-say .avatar {
+    width: 120px;
+}
+
+
+
+.they-say .person-say h3 {
+    margin: 0 0 10px;
+}
+
+
+
+.they-say .person-say p {
+    margin: 0;
+    line-height: 1.7;
+    margin-left: 20px;
+    width: calc(100%-140px);
+}
+
+
+@media (max-width: 767px){
+    .they-say .person-say .avatar {
+        float: none;
+        margin: auto;
+    }
+
+    .they-say .person-say h3 {
+        float: none;
+        text-align: center;
+        color: green;
+    }
+
+    .they-say .person-say p {
+        float: none;
+        width: 100%;
+        color: blue;
+    }
+
+}
+
+@media(min-width: 768px) {
+
+
+    .they-say .person-say:first-of-type {
+    width: 100%;
+    }
+
+    .they-say .person-say:not(:first-of-type) {
+    width: 49%;
+    }
+
+    .they-say .person-say:last-of-type {
+        margin-left: 2%;
+    }
+     
+      .they-say .person-say h3 {
+        color: green;
+    }
+
+
+    .they-say .person-say p {
+        color: blue;
+    }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 991px){
+   .they-say .person-say:not(:first-of-type) .avatar {
+
+    float: none;
+    margin: auto;
+   }
+
+   .they-say .person-say:not(:first-of-type) h3 {
+
+    float: none;
+    text-align: center;
+   } 
+
+   .they-say .person-say:not(:first-of-type) p {
+
+    float: none;
+    width: 100%;
+   }
+}
+
+@media (min-width: 992px) {
+
+.they-say .person-say:first-of-type {
+    width: 80%;
+    margin-left: 10%;
+    }
+
+    .they-say .person-say h3 {
+        margin: 0 0 10px;
+        color: green;
+    }
+     
+     .they-say .person-say p {
+        margin: 0px;
+        line-height: 2;
+        color: blue;
+    }
+
+
+}
+
+
+/*.they-say  .muhamed {
+   margin-left: 25%;
+}*/
+/* End What They Say*/
+
+
+/* Start Information*/
+
+    
+.information {
+    background-color: #EEE;
+    padding: 30px 0;
+    font-size: 18px;
+
+   }
+
+  .information .h1 {
+    font-size: 50px;
+    color: #848484;
+  }
+
+  .information .info-list li {
+    display: inline-block;
+    background-color: #DDD;
+    padding: 15px;
+    font-size: 22px;
+    cursor: pointer;
+   }
+
+   .information .info-list li.selected {
+        background-color: #FFF;
+        color: #13d68e;
+        font-weight: bold;
+   }
+
+
+   .information .info-content {
+    margin-bottom: 30px;
+   }
+
+   .information .info-content > div {
+    padding: 20px;
+    background-color: #FFF;
+    line-height: 2;
+   }
+
+   .information .info-content > div:not(:first-of-type) {
+    display: none;
+    
+   }
+    
+    @media(max-width: 767px){
+       .information .info-list li {
+        display: block;
+       } 
+    }
+
+
+
+
+
+/*End Information*/
+
+/*Start Footer*/
+
+.footer {
+    background-color: #333;
+    color: #EEE;
+}
+
+.footer .copyright,
+.footer .design {
+    padding: 20px;
+    text-align: center;
+
+}
+
+
+@media (min-width: 767px) {
+   .footer .copyright,
+   .footer .design {
+         width: 100%;
+    } 
+}
+
+@media (min-width: 768px) {
+   .footer .copyright,
+   .footer .design {
+         width: 50%;
+    } 
+}
+
+@media (min-width: 992px) {
+   .footer .copyright,
+   .footer .design {
+         width: 50%;
+    } 
+}
+
+/*End Footer*/
+
+@media (max-width: 767px){/*Mobile$Tablets Rules*/
+  
+   .responsive-paragraph {
+    text-align: center;
+    font-size: 20px;
+   }
+}
+@media (min-width: 768px) and (max-width: 991px)  { /* small screen rulles*/
+    .container {
+        width: 46.88%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199){ /* meduim Screen Rules*/
+    .container {
+        width: 60.63%;
+    }
+}
+
+
+@media (min-width: 1200px){
+    .container{
+        width: 73.13%;
+    }  
+}
+/*Start Frame Work*/
+   .container {
+    margin: auto;
+    padding: 0 15px;
+   }
+  .text-center {
+    text-align: center;
+  }
+
+  .clearfix {
+    clear: both;
+  }
+
+ 
+
+  .float-left {
+    float: left;
+  }
+   .float-right {
+    float: right;
+   }
+
+   .h1 {
+    font-size: 2em;
+   }
+
+   .responsive-paragraph {
+    line-height: 1.8;
+    font-size: 22px;
+    
+   }
+
+   .responsive-image {
+    width: 100%;
+   }
+
+   .classic-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+   }
+
+
+   .img-circle {
+    border-radius: 50%;
+
+   }
+
+   .img-thumbnail {
+    padding: 3px;
+    background-color: #FFF;
+    border: 1px solid #CCC;
+   }
+/*End Frame Work*/
